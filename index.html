@@ -14,13 +14,21 @@
 <body>
     <div class="headers">
         <h1>Library</h1>
-        <button>add book</button>
+        <button onclick="addBookToLibrary()">add book</button>
     </div> 
+
+    <div id="overlay"></div>
+    <div id="popUp">
+        <p>Add new book: </p>
+        <!-- TODO: collect new book info -->
+        <button onclick="addBookAndClose()">add</button>
+        <button onclick="cancelAdd()">cancel</button>
+    </div>
 
     <div class="library_display">
         <h3>All books: </h3>
         <div class="books">
-            
+
         </div>
     </div>
 </body>

@@ -23,8 +23,29 @@ Book.prototype.info = function() {
     return str; 
 }
 
-function addBookToLibrary(book) {
-    myLibrary.push(book); 
+// opens pop up to collect info on new book 
+function addBookToLibrary() {
+    // open pop up 
+    document.getElementById("overlay").style.display = "block"; 
+    document.getElementById("popUp").style.display = "block"; 
+
+    // collect info on new book 
+    // TODO
+}
+
+// adds book to library and close pop up screen 
+function addBookAndClose() {
+    // TODO
+
+    // close pop up 
+    document.getElementById("overlay").style.display = "none"; 
+    document.getElementById("popUp").style.display = "none"; 
+}
+
+function cancelAdd() {
+    // cancels adding new book 
+    document.getElementById("overlay").style.display = "none"; 
+    document.getElementById("popUp").style.display = "none"; 
 }
 
 function displayBooks() {
