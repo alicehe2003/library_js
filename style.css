@@ -74,3 +74,41 @@ body {
     padding: 20px;
     color: rgb(116, 142, 116); 
 }
+
+/* form styling */ 
+#new_book_info {
+    padding: 10px; 
+}
+
+#popUp {
+    color: rgb(59, 97, 59); 
+}
+
+#popUp p {
+    font-size: large;
+    font-weight: bold;
+}
+
+#new_book_info .info {
+    display: flex;
+    flex-direction: row;
+    margin: 10px; 
+    justify-content: space-between;
+}
+
+#new_book_info .info input {
+    margin-left: 10px; 
+}
+
+#new_book_info button {
+    color: white; 
+    background-color: rgb(59, 97, 59);
+    border: 0; 
+    padding: 8px; 
+    border-radius: 5px; 
+    margin-top: 20px; 
+    width: 70px; 
+    margin-inline: 8px;
+}
+
+

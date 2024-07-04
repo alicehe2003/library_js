@@ -52,6 +52,11 @@ newBookInfo.addEventListener("submit", (e) => {
     // display updated library (including new book)
     displayBook(newBook); 
 
+    // reset placeholder values 
+    document.getElementById("book_title").value = ''; 
+    document.getElementById("book_author").value = ''; 
+    document.getElementById("book_pages").value = '';
+
     // close pop up 
     closePopUp(); 
 })
