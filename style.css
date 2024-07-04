@@ -111,4 +111,24 @@ body {
     margin-inline: 8px;
 }
 
+/* book display styling */
+#library_display #books {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
 
+#books .book {
+    display: flex;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white; 
+    color: rgb(59, 97, 59);
+    border: solid 2px rgb(59, 97, 59);
+    border-radius: 8px;
+}
