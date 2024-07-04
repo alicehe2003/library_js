@@ -6,10 +6,7 @@
     <title>Document</title>
     
     <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="lib.js" as="script">
-
     <link rel="stylesheet" href="style.css">
-    <script src="lib.js"></script>
 </head>
 <body>
     <div class="headers">
@@ -39,15 +36,15 @@
             </div>
 
             <button type="submit">add</button>
-            <button onclick="closePopUp()">cancel</button>
+            <button type="button" onclick="closePopUp()">cancel</button>
         </form>
     </div>
 
-    <div class="library_display">
+    <div id="library_display">
         <h3>All books: </h3>
-        <div class="books">
-
-        </div>
+        <div id="books"></div>
     </div>
+
+    <script src="lib.js"></script>
 </body>
 </html>

@@ -62,7 +62,7 @@ body {
     height: 100%
 }
 
-.library_display {
+#library_display {
     display: flex;
     flex-direction: column;
     width: 100%; 
@@ -70,7 +70,7 @@ body {
     background-color: rgb(236, 245, 236);
 }
 
-.library_display h3 {
+#library_display h3 {
     padding: 20px;
     color: rgb(116, 142, 116); 
 }
