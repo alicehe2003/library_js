@@ -32,7 +32,16 @@ function displayBook(book) {
 
     let bookDiv = document.createElement('div'); 
     bookDiv.className = 'book'; 
-    bookDiv.innerHTML = book.info(); 
+    bookDiv.innerHTML = book.info();
+    bookDiv.setAttribute('data-title', book.title); 
+    
+    // create button to remove book 
+    let remove = document.createElement("button"); 
+    remove.className = "remove_button"; 
+    remove.textContent = "remove"; 
+    remove.addEventListener("click", removeBook); 
+    bookDiv.appendChild(remove); 
+
     library.appendChild(bookDiv); 
 } 
 
@@ -60,3 +69,17 @@ newBookInfo.addEventListener("submit", (e) => {
     // close pop up 
     closePopUp(); 
 })
+
+// remove the book when button clicked 
+function removeBook(event) {
+    let buttonClicked = event.target; 
+    let bookDiv = buttonClicked.parentElement; 
+    let title = bookDiv.getAttribute('data-title'); 
+
+    const bookIndex = myLibrary.findIndex(book => book.title === title); 
+    if (bookIndex !== -1) {
+        myLibrary.splice(bookIndex, 1); 
+    }
+    
+    bookDiv.remove(); 
+}

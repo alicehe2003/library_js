@@ -123,6 +123,7 @@ body {
 
 #books .book {
     display: flex;
+    flex-direction: column;
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -131,4 +132,14 @@ body {
     color: rgb(59, 97, 59);
     border: solid 2px rgb(59, 97, 59);
     border-radius: 8px;
+}
+
+#books .book .remove_button {
+    color: white; 
+    background-color: rgb(59, 97, 59);
+    border: 0; 
+    padding: 8px; 
+    border-radius: 5px; 
+    width: 70px; 
+    margin-top: 20px; 
 }
